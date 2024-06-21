@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momondo - make Your Travelling Easy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assetes/css/style.css" />
+    <link rel="stylesheet" href="./assetes/css/responsive.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"
+      defer
+    ></script>
+    <script src="./assetes/js/main.js'" defer></script>
+  </head>
+  <body>
+    <!-- header section start  -->
+    <nav>
+    <div class="logo-menu">
+    <span>
+<a href="index.html"><img
+    src="./assetes/images/logo.png" alt="Logo"
+    width="100px" height="30px"/></a>
+    </span>
+    <div class="menu-box">
+      <ul class="menu">
+        <li><a href="#" class="active">Hotel</a></li>
+        <li><a href="#">Flight</a></li>
+        <li><a href="#">Car Hire</a></li>
+        <li><a href="#">Trip Finder</a></li>
+        <li><a href="#">Inspirations</a></li>
+      </ul>
+      <ul class="lang-longin">
+        <li value="Country">
+          <img
+            src="./assetes/images/4.png"
+            alt="country-flag"
+            width="20px"
+            height="16px"
+          />English(GBP)
+        </li>
+        <li>Login</li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+    <!-- banner section start  -->
+    <section class="banner">
+    <div class="banner-title">
+    <h1>"The Best Place To Find <br />the cheapest airfares"</h1>
+    <h3>-every single time</h3>
+    </div>
+
+    <div class="booking-form">
+    <div class="switchbuttons">
+            <button class="active-b"><i class="fa-solid fa-plane-departure"></i>&nbsp;Flight</button>
+            <button><i class="fa-solid fa-shop"></i>&nbsp;Hotel</button>
+            <button><i class="fa-solid fa-car"></i>&nbsp;Car</button>
+    </div>
+    <!-- flight booking form -->
+    <form>
+        <div class="searchform">
+          <input type="text" id="Orign-City " placeholder="Enter orign city" />
+          <span><i class="fa-solid fa-arrow-right-arrow-left"
+            style="color: aqua; margin-right: 5px"></i></span>
+          <input type="text" id="Des-City" placeholder="Enter destnation city" />
+          <input type="date" id="Start-Date" placeholder="Strting" />
+          <input type="date" id="End-Date" placeholder="Ending" />
+          <select name="" id="">
+              <option value="Select Person's">Select Person's</option>
+              <option value="One Person">1 Person's</option>
+              <option value="Two Person">2 Person's</option>
+              <option value="Three Person">3 Person's</option>
+              <option value="Fourth Person">4 Person's</option>
+          </select>
+          <button type="submit">Search</button>
+          </div>
+          <br />
+          <div class="searchform2">
+            <span>
+              <i class="fa-solid fa-ticket"></i>
+              <label for="">Trip type:</label>
+              <select name="" id="">
+                <option value="Single Trip">Single Trip</option>
+                <option value="Return Trip">Return Trip</option>
+              </select>
+            </span>
+            <span>
+              <i class="fa-solid fa-ticket"></i>
+              <label for="">Ticket class:</label>
+              <select name="" id="">
+                <option value="Single Trip">Economy Class</option>
+                <option value="Return Trip">First Class</option>
+              </select>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Direct-Flights" />
+              <label for="Direct-Flights">Direct Flights Only</label>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Nearby-Airports" />
+              <label for="Nearby-Airports">Include Nearby Airports</label>
+            </span>
+          </div>
+    </form>
+<!-- hotel booking form
+    <form>
+        <div class="switchbuttons">
+            <button><i class="fa-solid fa-plane-departure"></i>Flight</button>
+            <button><i class="fa-solid fa-shop"></i>Hotel</button>
+            <button><i class="fa-solid fa-car"></i>Car Booking</button>
+          </div>
+        <div class="searchform">
+            <input
+              type="text"
+              id="Orign-City "
+              placeholder="&#xf3c5; Enter orign city"
+            />
+            <span
+              ><i
+                class="fa-solid fa-arrow-right-arrow-left"
+                style="color: aqua; margin-right: 5px"
+              ></i
+            ></span>
+            <input
+              type="text"
+              id="Des-City"
+              placeholder="&#xf3c5; Enter destnation city"
+            />
+            <input type="date" id="Start-Date" placeholder="Strting" />
+            <input type="date" id="End-Date" placeholder="Ending" />
+            <select name="" id="">
+              <option value="Select Person's">Select Person's</option>
+              <option value="One Person">1 Person's</option>
+              <option value="Two Person">2 Person's</option>
+              <option value="Three Person">3 Person's</option>
+              <option value="Fourth Person">4 Person's</option>
+            </select>
+            <button type="submit">Search</button>
+          </div>
+          <br />
+          <div>
+            <span>
+              <label for="">Trip type:</label>
+              <select name="" id="">
+                <option value="Single Trip">Single Trip</option>
+                <option value="Return Trip">Return Trip</option>
+              </select>
+            </span>
+            <span>
+              <label for="">Ticket class:</label>
+              <select name="" id="">
+                <option value="Single Trip">Economy Class</option>
+                <option value="Return Trip">First Class</option>
+              </select>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Direct-Flights" />
+              <label for="Direct-Flights">Direct Flights Only</label>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Nearby-Airports" />
+              <label for="Nearby-Airports">Include Nearby Airports</label>
+            </span>
+          </div>
+    </form> -->
+    <!-- car booking form
+    <form>
+        <div class="switchbuttons">
+            <button><i class="fa-solid fa-plane-departure"></i>Flight</button>
+            <button><i class="fa-solid fa-shop"></i>Hotel</button>
+            <button><i class="fa-solid fa-car"></i>Car Booking</button>
+          </div>
+        <div class="searchform">
+            <input
+              type="text"
+              id="Orign-City "
+              placeholder="&#xf3c5; Enter orign city"
+            />
+            <span
+              ><i
+                class="fa-solid fa-arrow-right-arrow-left"
+                style="color: aqua; margin-right: 5px"
+              ></i
+            ></span>
+            <input
+              type="text"
+              id="Des-City"
+              placeholder="&#xf3c5; Enter destnation city"
+            />
+            <input type="date" id="Start-Date" placeholder="Strting" />
+            <input type="date" id="End-Date" placeholder="Ending" />
+            <select name="" id="">
+              <option value="Select Person's">Select Person's</option>
+              <option value="One Person">1 Person's</option>
+              <option value="Two Person">2 Person's</option>
+              <option value="Three Person">3 Person's</option>
+              <option value="Fourth Person">4 Person's</option>
+            </select>
+            <button type="submit">Search</button>
+          </div>
+          <br />
+          <div>
+            <span>
+              <label for="">Trip type:</label>
+              <select name="" id="">
+                <option value="Single Trip">Single Trip</option>
+                <option value="Return Trip">Return Trip</option>
+              </select>
+            </span>
+            <span>
+              <label for="">Ticket class:</label>
+              <select name="" id="">
+                <option value="Single Trip">Economy Class</option>
+                <option value="Return Trip">First Class</option>
+              </select>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Direct-Flights" />
+              <label for="Direct-Flights">Direct Flights Only</label>
+            </span>
+            <span>
+              <input type="checkbox" name="" id="Nearby-Airports" />
+              <label for="Nearby-Airports">Include Nearby Airports</label>
+            </span>
+          </div>
+    </form> -->
+    </div>
+    </section>
+
+    <!-- Fun section start  -->
+    <section class="Fun">
+    <h1>Some fun we cover</h1>
+    <div class="fun-boxs">
+    <div>
+      <span><i class="fa-solid fa-person-biking fa-2xl"></i></span>
+      <h3>3747 M</h3>
+      <p>CYING TRACK</p>
+    </div>
+    <div>
+      <span><i class="fa-solid fa-route fa-2xl"></i></span>
+      <h3>3747 M</h3>
+      <p>DISTANCE COVERD</p>
+    </div>
+    <div>
+      <span><i class="fa-solid fa-person-hiking fa-2xl"></i></span>
+      <h3>3747 M</h3>
+      <p>ALTITUDE HIKED</p>
+    </div>
+    <div>
+      <span><i class="fa-solid fa-sailboat fa-2xl"></i></span>
+      <h3>3747 KM</h3>
+      <p>SAILING DISTANCE</p>
+    </div>
+    <div>
+      <span><i class="fa-solid fa-mountain-sun fa-2xl"></i></span>
+      <h3>3747 Days</h3>
+      <p>SPENT ADVENTURE</p>
+    </div>
+    <div>
+      <span><i class="fa-solid fa-shield-dog fa-2xl"></i></span>
+      <h3>3747 M</h3>
+      <p>JUGLE DISTANCE</p>
+    </div>
+    </div>
+    </section>
+
+    <!-- Newslatter section start  -->
+    <section class="newslatter">
+    <h1>SUSCRIBE FOR OUR TRAVEL NEWSLATTERS</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel exercitationem alias asperiores architecto? Porro fugiat dolore omnis amet distinctio maiores tempore corporis consequatur dolorem ad. Nam perspiciatis dolores illum inventore?</p>
+    <div><input type="email" name="Email" id="Email-Sub" placeholder="Enter your email address..."> <button type="submit">Subscribe</button></div>
+    </section>
+
+    <!-- Destination section start  -->
+    <section class="destination">                                                                                                              
+    <h1>POPULAR DESTINATION</h1>
+    <div class="des-boxs">
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span>$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    <div>
+      <img src="./assetes/images/dest1.jpg" alt="des-img">
+      <h4><span class="text-orange">$999 </span>
+      Rome, Florence & Venice <br>9-Night Vacation w/Air</h4>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, reprehenderit!</p>
+    </div>
+    </div>
+    </section>
+
+    <!-- Estimate section start  -->
+    <section class="estimate">
+    <h1>GET A QUICK ESTIMATE!</h1>
+    <h3>GET A PROFESSIONAL HELP</h3>
+    <div class="estimate-form">
+    <input type="text" name="" id="" placeholder="travel">
+    <input type="text" name="" id="" placeholder="travel">
+    <input type="text" name="" id="" placeholder="travel">
+    <input type="text" name="" id="" placeholder="trabvel">
+    <button type="submit">Calculat</button>
+    </div>
+    </section>
+
+    <!-- Latest Blog section start  -->
+    <section class="Blog">
+    <h1>LATEST BLOG</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas officiis tenetur accusantium perspiciatis architecto, exercitationem nemo laudantium natus molestias ut sint nihil corrupti? Fugiat quis nobis, eum commodi nam quas.</p>
+    <div class="latest-blog">
+    <div class="blog">
+    <img src="./assetes/images/blog1.jpeg" alt="blog-img" width="130px" height="130px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reprehenderit maiores harum sapiente! Illo doloribus quo sunt porro suscipit recusandae earum excepturi quos nulla, doloremque minima nemo voluptatibus quasi similique.</p>
+    </div>
+    <div class="blog">
+    <img src="./assetes/images/blog2.jpeg" alt="blog-img" width="130px" height="130px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus reprehenderit maiores harum sapiente! Illo doloribus quo sunt porro suscipit recusandae earum excepturi quos nulla, doloremque minima nemo voluptatibus quasi similique.</p>
+    </div>
+    </div>
+    </section>
+    
+    <!-- Footer section start  -->
+    <footer class="footer">
+    <div>
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+    </div>
+    <div>
+    <ul>
+      <li>2</li>
+      <li>2</li>
+      <li>2</li>
+      <li>2</li>
+      <li>2</li>
+    </ul>
+    </div>
+    <div>
+    <ul>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+      <li>3</li>
+    </ul>
+    </div>
+    <div>
+      <ul>
+        <li>5</li>
+        <li>5</li>
+      </ul>
+    </div>
+    </footer>
+  </body>
+</html>
